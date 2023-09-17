@@ -9,5 +9,5 @@ print('hello world') # this will work
 print("escaping the sequence using backslash \"+\" is also a good practice")
 print('the other way is to use \' and \" to sepate them')
 
-#using input
+#using input to get the data from the console
 print('hello '+input("what is your name ? "))
