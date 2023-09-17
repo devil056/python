@@ -19,3 +19,10 @@ a,b=b,a
 print("After the secondary swap")
 print("a: "+a)
 print("b: "+b)
+
+#naming convention
+#for global var we need to use all caps variable names for regular var we can use all small caps
+#by default we cannot the value int using the print so we need to convert to string first
+name = input("Enter the name: ")
+name_length = len(name)
+print("the name that you enetered is "+name+" and the length of the name :"+str(name_length))
