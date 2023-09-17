@@ -10,4 +10,5 @@ else:
 
 members = int(input('Into how many people are splitting the bill: '))
 each_bill = round((new_bill/members),2)
+#instead of using the round we can also use the inbuilt f string converter f'{:.2f}'
 print(f'Each person should pay ${each_bill}')
