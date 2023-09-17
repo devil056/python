@@ -16,3 +16,6 @@ if (int(current_year)-int(year)) < 18:
     print("I am sorry you are not allowed in the cafe.")
 else:
     print('Please enter the cafe')
+
+name_list = name.split(" ")
+print(name_list)
