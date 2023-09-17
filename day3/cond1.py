@@ -17,3 +17,16 @@ else:
 	print('The enetered number is odd')
 
 #Nested if statements
+# if age if above 18 pay $12 or else $7
+print('Welcome to the rollercoaster ride')
+height = int(input('Please enter your height in cms: '))
+age = int(input('Please enter your age in yrs: '))
+if height >=120:
+	if age >= 18:
+		print('Your billed amount is $12')
+	elif age > 12:
+		print('Your billed amount is $7')
+	else:
+		print('Your billed amount is $5')
+else:
+	print('I am afraid your height is not upto the mark.Please try again later')
