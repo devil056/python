@@ -12,3 +12,5 @@ print(states[-3:])
 
 states.append('Uttarakand') #this is at the very end and -1 will be uttarakand
 print(states)
+
+#for more information on the lists we can refer the online documentation
