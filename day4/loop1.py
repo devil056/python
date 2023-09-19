@@ -22,3 +22,4 @@ def while_loop():
 
 print('function defining and using no args')
 while_loop()
+#completed
