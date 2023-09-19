@@ -15,4 +15,5 @@ while '_' in word:
 		char = find[pos]
 		if char == guess:
 			word[pos]=guess
-	print(word)
+	print("".join(word))
+print('Game completed')
