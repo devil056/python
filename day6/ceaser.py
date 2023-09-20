@@ -11,3 +11,34 @@ Y88b.   Y8b.     888  888      X88 Y8b.     888          Y88b.    888 888 d88P 8
                                                                       888                                
                                                                       888                                
 	''')
+
+alps = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+		'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+def encoder(msg,shift_by):
+	encoded_msg = ''
+	for char in msg:
+		if char in alps:
+			new_char = alps[alps.index(char)+shift]
+			encoded_msg+=new_char
+		else:
+			encoded_msg+=char
+	return encoded_msg
+
+def decoder(msg,unshift_by):
+	decoded_msg = ''
+	for char in msg:
+		if char in alps:
+			new_char = alps[alps.index(char)-shift]
+			decoded_msg+=new_char
+		else:
+			decoded_msg+=char
+	return decoded_msg
+
+
+enc_msg = input('Enter your message: ')
+shift = int(input('Enter the num of positions to shift: '))
+e_msg=encoder(enc_msg,shift)
+print(e_msg)
+de_msg=decoder(e_msg,shift)
+print(de_msg)
