@@ -15,6 +15,8 @@ Y88b.   Y8b.     888  888      X88 Y8b.     888          Y88b.    888 888 d88P 8
 alps = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
 		'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
+run = False
+
 def encoder(msg,shift_by):
 	encoded_msg = ''
 	for char in msg:
@@ -35,10 +37,29 @@ def decoder(msg,unshift_by):
 			decoded_msg+=char
 	return decoded_msg
 
+def quit_prgm():
+	user_choice = input('Do you wish to exit the program ? [yes/no]')
+	if user_choice == 'yes':
+		run=True
+	elif user_choice == 'no':
+		run=False
+	else:
+		print('Please make sure you answer with yes or no only')
 
-enc_msg = input('Enter your message: ')
-shift = int(input('Enter the num of positions to shift: '))
-e_msg=encoder(enc_msg,shift)
-print(e_msg)
-de_msg=decoder(e_msg,shift)
-print(de_msg)
+while not run:
+	choice = (input('Do you wish to encode or decode a message:[encode/decode]')).lower()
+	if choice=='encode':
+		enc_msg = input('Enter your message: ')
+		shift = int(input('Enter the num of positions to shift: '))
+		e_msg=encoder(enc_msg,shift)
+		print(e_msg)
+		quit_prgm()
+	elif choice=='decode':
+		de_msg = input('Enter your message: ')
+		unshift = int(input('Enter the num of positions to unshift: '))
+		de_msg=decoder(e_msg,shift)
+		print(de_msg)
+		quit_prgm()
+	else:
+		print('Please make sure you are typing correct words')
+
