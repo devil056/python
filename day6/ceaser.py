@@ -40,9 +40,9 @@ def decoder(msg,unshift_by):
 def quit_prgm():
 	user_choice = input('Do you wish to exit the program ? [yes/no]')
 	if user_choice == 'yes':
-		run=True
+		return True
 	elif user_choice == 'no':
-		run=False
+		return False
 	else:
 		print('Please make sure you answer with yes or no only')
 run = False
@@ -53,14 +53,14 @@ while not run:
 		shift = int(input('Enter the num of positions to shift: '))
 		e_msg=encoder(enc_msg,shift)
 		print(e_msg)
-		quit_prgm()
+		run = quit_prgm()
 	elif choice=='decode':
 		de_msg = input('Enter your message: ')
 		unshift = int(input('Enter the num of positions to unshift: '))
 		de_msg=decoder(e_msg,shift)
 		print(de_msg)
-		quit_prgm()
+		run = quit_prgm()
 	else:
 		print('Please make sure you are typing correct words')
-		quit_prgm()
+
 
