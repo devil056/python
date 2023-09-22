@@ -15,7 +15,7 @@ Y88b.   Y8b.     888  888      X88 Y8b.     888          Y88b.    888 888 d88P 8
 alps = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
 		'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
-run = False
+
 
 def encoder(msg,shift_by):
 	encoded_msg = ''
@@ -45,7 +45,7 @@ def quit_prgm():
 		run=False
 	else:
 		print('Please make sure you answer with yes or no only')
-
+run = False
 while not run:
 	choice = (input('Do you wish to encode or decode a message:[encode/decode]')).lower()
 	if choice=='encode':
@@ -62,4 +62,5 @@ while not run:
 		quit_prgm()
 	else:
 		print('Please make sure you are typing correct words')
+		quit_prgm()
 
