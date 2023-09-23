@@ -15,7 +15,7 @@ if height > 120 :
 		bill+=12
 
 	if photo=='yes':
-	bill+=3
+		bill+=3
 
 	print(f'The total bill amount is ${bill}')
 else:
