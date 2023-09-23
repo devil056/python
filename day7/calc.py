@@ -1,6 +1,6 @@
 #calculator with funcs
 
-def add(um1,num2):
+def add(num1,num2):
 	"""
 	This function is used to provide additions of two numbers
 	"""
