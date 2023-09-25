@@ -1,9 +1,11 @@
-import mod1
+import day9.mod1 as mod1
 
-print(mod1.var1)
+print(mod1.some_var)
 
-from random import randint
+from turtle import Turtle,Screen
 
-list1 = [1,2,3,4,5,6]
-num = randint(1,len(list1)-1)
-print(num)
+timmy = Turtle()
+print(timmy)
+
+my_screen = Screen()
+print(my_screen.canvheight)

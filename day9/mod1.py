@@ -1,1 +1,1 @@
-var1 = 'some random value'
+some_var = 'random value'
