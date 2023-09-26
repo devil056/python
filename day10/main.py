@@ -22,4 +22,5 @@ class Menu:
         print('Checking the drink based on the order num')
 
 money_machine = MoneyMachine()
-money_machine.report()
+coffee_maker = CoffeeMaker()
+menu = Menu()
