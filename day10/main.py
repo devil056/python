@@ -1,3 +1,5 @@
+machine_status = False
+
 class MoneyMachine:
     def report():
         print('Report')
@@ -24,3 +26,7 @@ class Menu:
 money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 menu = Menu()
+
+while not machine_status:
+    # we will write our code here incase if we are to process the data and the build something from the scratch
+    # also we can create individual python files for each class and import into main python script and use them
