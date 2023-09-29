@@ -30,3 +30,4 @@ menu = Menu()
 while not machine_status:
     # we will write our code here incase if we are to process the data and the build something from the scratch
     # also we can create individual python files for each class and import into main python script and use them
+    coffee_maker.report
