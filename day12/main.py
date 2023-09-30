@@ -8,3 +8,4 @@ for item in question_data:
 
 qb = QuizBrain(question_bank)
 qb.next_question()
+print(qb.more_question())
