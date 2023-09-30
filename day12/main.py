@@ -7,3 +7,4 @@ for item in question_data:
 	question_bank.append(Question(item['text'],item['answer']))
 
 qb = QuizBrain(question_bank)
+qb.next_question()
