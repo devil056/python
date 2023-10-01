@@ -12,7 +12,9 @@ directions= [0,90,180,270]
 # 	t.forward(10)
 # 	t.pendown()
 
-for i in range(300):
+for i in range(150):
 	t.color(random.choice(colors))
 	t.forward(20)
 	t.setheading(random.choice(directions))
+
+turtle.exitonclick()
